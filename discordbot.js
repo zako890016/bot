@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGES] });
-const token = process.env.OTM5NDE0MzI3MTU1MzU5Nzg1.Yf4fxQ.kR5POKpNukigpKoSPbTbU4GXdT8;
+const token = process.env.DISCORD_BOT_TOKEN;
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
